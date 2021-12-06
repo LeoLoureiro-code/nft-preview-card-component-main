@@ -84,6 +84,12 @@ body{
     vertical-align: middle;
 }
 
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
 h1{
     color: var(--title-name-text);
     font-weight: 600;
