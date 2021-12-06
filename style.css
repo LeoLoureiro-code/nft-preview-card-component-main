@@ -1,0 +1,175 @@
+:root{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --title-name-text: hsl(0, 0%, 100%);
+    --price-text: hsl(178, 100%, 50%);
+    --price-text-opa: hsla(178, 100%, 50%, 0.5);
+    --horizontal-line: hsl(215, 32%, 27%);
+    --font-family: 'Outfit', sans-serif;
+    --paragraph: hsl(215, 51%, 70%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.autor{
+    color: var(--title-name-text);
+    font-weight: 300;
+}
+
+.autor:hover{
+    color: var(--price-text);
+    cursor: pointer;
+}
+
+
+.autorDiv{
+    margin-top: 0.9rem;
+    display: flex;
+
+}
+
+.avatar{
+    border: 1px solid var(--title-name-text);
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+}
+
+body{
+    align-items: center;
+    background-color: var(--main-bg);
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 18px;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card{
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    height: 37.5rem;
+    position: relative;
+    width: 21.875rem;
+}
+
+.creator{
+    color: var(--paragraph);
+    font-size: 16px;
+    margin-left: 1rem;
+    padding-top: 0.4rem;
+}
+
+.days{
+    font-size: 16px;
+    margin-right: 0.5rem;
+}
+
+.description{
+    color: var(--paragraph);
+    font-weight: 200;
+    line-height: 1.70rem;
+    padding-bottom: 1.3rem;
+}
+
+.ETH, .days{
+    margin-left: 0.2rem;
+    display: inline;
+    vertical-align: middle;
+}
+
+h2{
+    color: var(--title-name-text);
+    font-weight: 600;
+    font-size: 22px;
+    margin: 1rem 0 1rem 0;
+}
+
+h2:hover{
+    color: var(--price-text);
+    cursor: pointer;
+}
+
+
+.hoverImageDiv{
+    align-items: center;
+    background-color: var(--price-text-opa);
+    border-radius: 0.50rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    padding: 1.50rem 1rem 1rem 1rem;
+    height: 19rem;
+    visibility: hidden;
+    width: 19rem;
+}
+
+.hoverImage{
+    padding-bottom: 0.5rem;
+}
+
+hr{
+    background-color: var(--horizontal-line);
+    border: none;
+    color: var(--horizontal-line);
+    height: 1px;
+    width: 19rem;
+}
+
+.icon{
+    vertical-align: middle;
+}
+
+img{
+    border-radius: 0.50rem;
+    height: auto;
+    max-width: 100%;
+}
+
+.imgDiv{
+    margin: 0 auto;
+    padding: 1.50rem 1rem 1rem 1rem;
+    height: 21rem;
+    width: 21rem;
+}
+
+.imgDiv:hover .hoverImageDiv{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.info{
+    padding: 0 0 0 1.5rem;
+}
+
+li{
+    display: inline;
+}
+
+li:nth-child(1){
+    color: var(--price-text);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li:nth-child(2){
+    padding-right: 2rem;
+    color: var(--paragraph);
+}
+
+ol{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 21rem;
+    padding-bottom: 1.5rem;
+    
+}
