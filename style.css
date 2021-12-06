@@ -84,14 +84,14 @@ body{
     vertical-align: middle;
 }
 
-h2{
+h1{
     color: var(--title-name-text);
     font-weight: 600;
     font-size: 22px;
     margin: 1rem 0 1rem 0;
 }
 
-h2:hover{
+h1:hover{
     color: var(--price-text);
     cursor: pointer;
 }
